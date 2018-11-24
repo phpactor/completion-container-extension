@@ -1,5 +1,5 @@
 {
-    "name": "phpactor/completion-phpactor-container",
+    "name": "phpactor/completion-container-extension",
     "description": "CompletionContainer",
     "license": "MIT",
     "minimum-stability": "dev",
@@ -33,7 +33,7 @@
         }
     },
     "extra": {
-        "phpactor.extension_class": "Phpactor\\Extension\\CompletionContainer\\Completion for the Phpactor DI containerExtension",
+        "phpactor.extension_class": "Phpactor\\Extension\\CompletionContainer\\CompletionContainerExtension",
         "branch-alias": {
             "dev-master": "0.1.x-dev"
         }
