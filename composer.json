@@ -14,7 +14,7 @@
         "phpactor/container": "^1.0",
         "phpactor/completion-extension": "~0.1",
         "phpactor/worse-reflection-extension": "~0.1",
-        "phpactor/source-code-filesystem-extension": "^0.1.0@dev"
+        "phpactor/source-code-filesystem-extension": "~0.1"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.10.5@stable",
