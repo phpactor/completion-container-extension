@@ -59,8 +59,8 @@ $fo = function (Container $container) {
 EOT
             ,
             [
-                'nothing.here',
-                'nothing.there',
+                '\'nothing.here\'',
+                '\'nothing.there\'',
             ]
         ];
 

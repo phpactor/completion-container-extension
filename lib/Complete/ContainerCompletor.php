@@ -98,7 +98,7 @@ class ContainerCompletor implements TolerantCompletor
                     ]);
                 }
 
-                return;
+                continue;
             }
         }
     }
@@ -129,7 +129,7 @@ class ContainerCompletor implements TolerantCompletor
             /** @var ArgumentExpression $node */
             foreach ($call->argumentExpressionList->getElements() as $node) {
                 if ($node->expression instanceof StringLiteral) {
-                    $references[] = $node->expression->getStringContentsText();
+                    $references[] = "'". $node->expression->getStringContentsText()."'";
                 }
                 return;
             }
