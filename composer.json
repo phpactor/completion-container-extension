@@ -33,6 +33,9 @@
         }
     },
     "extra": {
-        "phpactor.extension_class": "Phpactor\\Extension\\CompletionContainer\\Completion for the Phpactor DI containerExtension"
+        "phpactor.extension_class": "Phpactor\\Extension\\CompletionContainer\\Completion for the Phpactor DI containerExtension",
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
     }
 }
