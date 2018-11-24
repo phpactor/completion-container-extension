@@ -6,6 +6,7 @@ use Phpactor\Container\Container;
 use Phpactor\Container\ContainerBuilder;
 use Phpactor\Container\Extension;
 use Phpactor\Extension\CompletionContainer\Complete\ContainerCompletor;
+use Phpactor\Extension\CompletionWorse\CompletionWorseExtension;
 use Phpactor\Extension\Completion\CompletionExtension;
 use Phpactor\Extension\SourceCodeFilesystem\SourceCodeFilesystemExtension;
 use Phpactor\Extension\WorseReflection\WorseReflectionExtension;
@@ -23,7 +24,7 @@ class CompletionContainerExtension implements Extension
                 $container->get(WorseReflectionExtension::SERVICE_REFLECTOR),
                 $container->get(SourceCodeFilesystemExtension::SERVICE_FILESYSTEM_GIT)
             );
-        }, [ CompletionExtension::TAG_COMPLETOR => []]);
+        }, [ CompletionWorseExtension::TAG_TOLERANT_COMPLETOR => []]);
     }
 
     /**
